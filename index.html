@@ -216,13 +216,18 @@
       /* WORKOUT SCREEN */
       #workout-header {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 8px;
         padding: 16px 16px 8px;
         position: sticky;
         top: 0;
         background: var(--bg);
         z-index: 10;
+      }
+      #workout-header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
       #workout-day-name {
         font-size: 16px;
@@ -234,6 +239,37 @@
         align-items: center;
         gap: 8px;
         flex-shrink: 0;
+      }
+      #workout-timers {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--card);
+        border-radius: 12px;
+        padding: 8px 12px;
+      }
+      .timer-block {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      .timer-icon {
+        font-size: 13px;
+        opacity: 0.7;
+      }
+      .timer-value {
+        font-size: 15px;
+        font-weight: 700;
+        font-variant-numeric: tabular-nums;
+        letter-spacing: 0.5px;
+      }
+      .timer-sublabel {
+        font-size: 11px;
+        color: var(--text2);
+        font-weight: 500;
+      }
+      #workout-rest-timer.ready {
+        color: var(--success);
       }
       #workout-finish-header-btn {
         background: rgba(48, 209, 88, 0.15);
@@ -466,22 +502,6 @@
         height: 14px;
       }
 
-      #add-set-btn {
-        margin-top: 12px;
-        width: 100%;
-        padding: 12px;
-        background: none;
-        border: 1.5px dashed var(--border);
-        border-radius: 12px;
-        color: var(--text2);
-        font-size: 14px;
-        cursor: pointer;
-        transition: all 0.15s;
-      }
-      #add-set-btn:active {
-        border-color: var(--accent);
-        color: var(--accent);
-      }
 
       /* WORKOUT NAV */
       #workout-nav {
@@ -1492,15 +1512,29 @@
       <!-- WORKOUT SCREEN -->
       <div id="screen-workout" class="screen">
         <div id="workout-header">
-          <div id="workout-day-name"></div>
-          <div id="workout-header-right">
-            <button
-              id="workout-finish-header-btn"
-              onclick="confirmFinishWorkout()"
-            >
-              Завершить
-            </button>
-            <button id="workout-close-btn" onclick="confirmClose()">✕</button>
+          <div id="workout-header-top">
+            <div id="workout-day-name"></div>
+            <div id="workout-header-right">
+              <button
+                id="workout-finish-header-btn"
+                onclick="confirmFinishWorkout()"
+              >
+                Завершить
+              </button>
+              <button id="workout-close-btn" onclick="confirmClose()">✕</button>
+            </div>
+          </div>
+          <div id="workout-timers">
+            <div class="timer-block">
+              <span class="timer-icon">⏱</span>
+              <span id="workout-total-timer" class="timer-value">00:00</span>
+              <span class="timer-sublabel">тренировка</span>
+            </div>
+            <div class="timer-block">
+              <span class="timer-icon">💤</span>
+              <span id="workout-rest-timer" class="timer-value">00:00</span>
+              <span class="timer-sublabel">/ 90с отдых</span>
+            </div>
           </div>
         </div>
         <div id="workout-progress">
@@ -2154,6 +2188,12 @@
       let activeProgramDayIdx = 0;
       let swipeDir = 1; // 1 = slide from right (next), -1 = slide from left (prev)
       let historyView = "records"; // 'records' | 'progress'
+
+      // Timer state
+      let workoutTimerInterval = null;
+      let restTimerInterval = null;
+      let restStartTime = null;
+      const REST_RECOMMENDATION_SEC = 90;
       let activeChartGroup = null;
       let chartMetric = "max"; // 'max' | '1rm' | 'volume'
 
@@ -2226,10 +2266,69 @@
       }
       function clearSession() {
         localStorage.removeItem("gymNote_session");
+        localStorage.removeItem("gymNote_restStartTime");
         session = null;
+        stopWorkoutTimers();
       }
       function saveHistory() {
         localStorage.setItem("gymNote_history", JSON.stringify(history));
+      }
+
+      // =====================================================
+      // TIMERS
+      // =====================================================
+      function fmtTimerSec(totalSec) {
+        const h = Math.floor(totalSec / 3600);
+        const m = Math.floor((totalSec % 3600) / 60);
+        const s = totalSec % 60;
+        if (h > 0)
+          return `${h}:${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+        return `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+      }
+
+      function startWorkoutTimers(resumeRest = false) {
+        stopWorkoutTimers();
+        workoutTimerInterval = setInterval(() => {
+          if (!session) return;
+          const el = document.getElementById("workout-total-timer");
+          if (!el) return;
+          el.textContent = fmtTimerSec(
+            Math.floor((Date.now() - session.startTime) / 1000),
+          );
+        }, 1000);
+        if (resumeRest) {
+          const saved = localStorage.getItem("gymNote_restStartTime");
+          restStartTime = saved ? parseInt(saved) : Date.now();
+        } else {
+          resetRestTimer();
+        }
+        startRestTimerInterval();
+      }
+
+      function resetRestTimer() {
+        restStartTime = Date.now();
+        localStorage.setItem("gymNote_restStartTime", restStartTime);
+        if (restTimerInterval) clearInterval(restTimerInterval);
+        startRestTimerInterval();
+      }
+
+      function startRestTimerInterval() {
+        if (restTimerInterval) clearInterval(restTimerInterval);
+        restTimerInterval = setInterval(() => {
+          const el = document.getElementById("workout-rest-timer");
+          if (!el) return;
+          const sec = Math.floor((Date.now() - restStartTime) / 1000);
+          el.textContent = fmtTimerSec(sec);
+          el.classList.toggle("ready", sec >= REST_RECOMMENDATION_SEC);
+        }, 1000);
+      }
+
+      function stopWorkoutTimers() {
+        clearInterval(workoutTimerInterval);
+        clearInterval(restTimerInterval);
+        workoutTimerInterval = null;
+        restTimerInterval = null;
+        restStartTime = null;
       }
 
       // =====================================================
@@ -2376,6 +2475,7 @@
           exercises,
         };
         saveSession();
+        startWorkoutTimers();
         switchTab("workout");
       }
 
@@ -2469,7 +2569,6 @@
         ${setsHTML}
       </tbody>
     </table>
-    <button id="add-set-btn" onclick="addSet()">+ Добавить подход</button>
   `;
         const cardEl = document.getElementById("exercise-card");
         cardEl.innerHTML = cardHTML;
@@ -2577,25 +2676,6 @@
 
       function onSetInput(setIdx, field, value) {
         updateSet(setIdx, field, value);
-        // Auto-fill weight in next set from this one
-        if (field === "weight" && value !== "") {
-          const ex = session.exercises[session.currentExIndex];
-          if (
-            setIdx + 1 < ex.sets.length &&
-            ex.sets[setIdx + 1].weight === ""
-          ) {
-            ex.sets[setIdx + 1].weight = value;
-            // Update next row input
-            const nextInputs = document.querySelectorAll(
-              `input[data-field="weight"][data-set="${setIdx + 1}"]`,
-            );
-            nextInputs.forEach((inp) => {
-              inp.value = value;
-              inp.classList.add("filled");
-            });
-            saveSession();
-          }
-        }
       }
 
       function updateSet(setIdx, field, value) {
@@ -2617,6 +2697,7 @@
             checkBtn.classList.add("done");
             checkBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>`;
           }
+          resetRestTimer();
         }
         // Update input styling
         const inp = document.querySelector(
@@ -2629,6 +2710,7 @@
       function toggleSetDone(setIdx) {
         const ex = session.exercises[session.currentExIndex];
         ex.sets[setIdx].done = !ex.sets[setIdx].done;
+        if (ex.sets[setIdx].done) resetRestTimer();
         saveSession();
         renderWorkout();
       }
@@ -2845,6 +2927,7 @@
 
         history.push(record);
         saveHistory();
+        stopWorkoutTimers();
         clearSession();
 
         renderCompleteScreen(record);
@@ -3886,6 +3969,7 @@
         loadData();
         renderHome();
         initSwipeListeners();
+        if (session) startWorkoutTimers(true);
       }
 
       init();
