@@ -422,6 +422,7 @@
       .sets-table {
         width: 100%;
         border-collapse: collapse;
+        table-layout: fixed;
       }
       .sets-table th {
         font-size: 10px;
@@ -433,10 +434,10 @@
         text-align: left;
       }
       .sets-table th:first-child {
-        width: 28px;
+        width: 24px;
       }
       .sets-table th.col-check {
-        width: 36px;
+        width: 40px;
         text-align: center;
       }
       .set-row td {
@@ -452,16 +453,16 @@
       .set-input {
         background: var(--card2);
         border: 1.5px solid var(--border);
-        border-radius: 10px;
+        border-radius: 8px;
         color: var(--text);
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 600;
         text-align: center;
-        padding: 10px 6px;
+        padding: 6px 2px;
         width: 100%;
         outline: none;
         transition: border-color 0.15s;
-        min-height: 44px;
+        min-height: 40px;
       }
       .set-input:focus {
         border-color: var(--accent);
@@ -470,10 +471,10 @@
         border-color: var(--success);
       }
       td.col-weight {
-        padding-right: 6px;
+        padding-right: 4px;
       }
       td.col-reps {
-        padding-right: 6px;
+        padding-right: 4px;
       }
       td.col-check {
         text-align: center;
@@ -501,7 +502,35 @@
         width: 14px;
         height: 14px;
       }
-
+      .stepper {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      .stepper .set-input {
+        width: auto;
+        flex: 1;
+        min-width: 40px;
+      }
+      .stepper-btn {
+        width: 28px;
+        min-height: 40px;
+        border: 1.5px solid var(--border);
+        background: var(--card2);
+        border-radius: 8px;
+        color: var(--text);
+        font-size: 20px;
+        font-weight: 300;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+        transition: opacity 0.1s;
+      }
+      .stepper-btn:active {
+        opacity: 0.5;
+      }
 
       /* WORKOUT NAV */
       #workout-nav {
@@ -2500,7 +2529,7 @@
           const dot = document.createElement("div");
           const filled =
             e.sets.length > 0 &&
-            e.sets.every((s) => s.weight !== "" && s.reps !== "");
+            e.sets.every((s) => s.done);
           let cls = "progress-dot";
           if (i === idx) cls += " current";
           else if (filled) cls += " done";
@@ -2524,22 +2553,30 @@
     <tr class="set-row" data-set="${si}">
       <td class="set-num">${si + 1}</td>
       <td class="col-weight">
-        <input class="set-input ${set.weight !== "" ? "filled" : ""}"
-          type="number" inputmode="decimal" placeholder="–"
-          value="${set.weight !== "" ? set.weight : ""}"
-          data-field="weight" data-set="${si}"
-          onchange="updateSet(${si}, 'weight', this.value)"
-          oninput="onSetInput(${si}, 'weight', this.value)"
-        >
+        <div class="stepper">
+          <button class="stepper-btn" onclick="stepField(${si}, 'weight', -2.5)">−</button>
+          <input class="set-input ${set.weight !== "" ? "filled" : ""}"
+            type="number" inputmode="decimal" placeholder="–"
+            value="${set.weight !== "" ? set.weight : ""}"
+            data-field="weight" data-set="${si}"
+            onchange="updateSet(${si}, 'weight', this.value)"
+            oninput="onSetInput(${si}, 'weight', this.value)"
+          >
+          <button class="stepper-btn" onclick="stepField(${si}, 'weight', 2.5)">+</button>
+        </div>
       </td>
       <td class="col-reps">
-        <input class="set-input ${set.reps !== "" ? "filled" : ""}"
-          type="number" inputmode="numeric" placeholder="–"
-          value="${set.reps !== "" ? set.reps : ""}"
-          data-field="reps" data-set="${si}"
-          onchange="updateSet(${si}, 'reps', this.value)"
-          oninput="onSetInput(${si}, 'reps', this.value)"
-        >
+        <div class="stepper">
+          <button class="stepper-btn" onclick="stepField(${si}, 'reps', -1)">−</button>
+          <input class="set-input ${set.reps !== "" ? "filled" : ""}"
+            type="number" inputmode="numeric" placeholder="–"
+            value="${set.reps !== "" ? set.reps : ""}"
+            data-field="reps" data-set="${si}"
+            onchange="updateSet(${si}, 'reps', this.value)"
+            oninput="onSetInput(${si}, 'reps', this.value)"
+          >
+          <button class="stepper-btn" onclick="stepField(${si}, 'reps', 1)">+</button>
+        </div>
       </td>
       <td class="col-check">
         <button class="set-check ${set.done ? "done" : ""}" onclick="toggleSetDone(${si})">
@@ -2687,24 +2724,40 @@
               ? parseFloat(value)
               : parseInt(value);
         ex.sets[setIdx][field] = parsed;
-        // Auto-mark done if both weight and reps filled
-        if (ex.sets[setIdx].weight !== "" && ex.sets[setIdx].reps !== "") {
-          ex.sets[setIdx].done = true;
-          const checkBtn = document.querySelector(
-            `.set-row[data-set="${setIdx}"] .set-check`,
-          );
-          if (checkBtn) {
-            checkBtn.classList.add("done");
-            checkBtn.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>`;
-          }
-          resetRestTimer();
-        }
         // Update input styling
         const inp = document.querySelector(
           `input[data-field="${field}"][data-set="${setIdx}"]`,
         );
         if (inp) inp.classList.toggle("filled", value !== "");
         saveSession();
+      }
+
+      function stepField(setIdx, field, delta) {
+        const ex = session.exercises[session.currentExIndex];
+        const current = parseFloat(ex.sets[setIdx][field]) || 0;
+        let next = Math.round((current + delta) * 10) / 10;
+        let value;
+        if (field === "reps") {
+          next = Math.max(0, Math.round(next));
+          value = next > 0 ? String(next) : "";
+        } else {
+          value = String(next);
+        }
+        updateSet(setIdx, field, value);
+        const inp = document.querySelector(
+          `input[data-field="${field}"][data-set="${setIdx}"]`,
+        );
+        if (inp) {
+          inp.value = value;
+          inp.classList.toggle("filled", value !== "");
+        }
+        document.querySelectorAll(".progress-dot").forEach((dot, i) => {
+          const e = session.exercises[i];
+          const filled = e.sets.length > 0 && e.sets.every((s) => s.done);
+          dot.className =
+            "progress-dot" +
+            (i === session.currentExIndex ? " current" : filled ? " done" : "");
+        });
       }
 
       function toggleSetDone(setIdx) {
