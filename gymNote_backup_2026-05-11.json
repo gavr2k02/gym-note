@@ -1,0 +1,5317 @@
+{
+  "version": 1,
+  "createdAt": "2026-05-11T15:57:54.054Z",
+  "programs": [
+    {
+      "id": "prog_fullbody_v2",
+      "name": "Фуллбади v2",
+      "emoji": "💪",
+      "days": [
+        {
+          "id": 1,
+          "emoji": "💪",
+          "name": "СИЛОВОЙ",
+          "subtitle": "База + пресс + руки",
+          "duration": "70–75 мин",
+          "dayOfWeek": "Вторник",
+          "exercises": [
+            {
+              "id": "v2_1_1",
+              "name": "Приседания со штангой",
+              "setsTarget": 5,
+              "repsTarget": "5",
+              "warmupSets": 2,
+              "group": "НОГИ"
+            },
+            {
+              "id": "v2_1_2",
+              "name": "Жим штанги лёжа",
+              "setsTarget": 5,
+              "repsTarget": "5",
+              "warmupSets": 1,
+              "group": "ГРУДЬ"
+            },
+            {
+              "id": "v2_1_3",
+              "name": "Тяга штанги в наклоне",
+              "setsTarget": 4,
+              "repsTarget": "6–8",
+              "group": "СПИНА"
+            },
+            {
+              "id": "v2_1_4",
+              "name": "Армейский жим (стоя)",
+              "setsTarget": 3,
+              "repsTarget": "6–8",
+              "warmupSets": 1,
+              "group": "ПЛЕЧИ"
+            },
+            {
+              "id": "v2_1_5",
+              "name": "Подъём штанги на бицепс",
+              "setsTarget": 3,
+              "repsTarget": "8–10",
+              "group": "БИЦЕПС"
+            },
+            {
+              "id": "v2_1_6",
+              "name": "Разгибания из-за головы на блоке",
+              "setsTarget": 3,
+              "repsTarget": "10–12",
+              "group": "ТРИЦЕПС"
+            },
+            {
+              "id": "v2_1_7",
+              "name": "Подтягивания",
+              "setsTarget": 3,
+              "repsTarget": "6–8",
+              "group": "СПИНА"
+            },
+            {
+              "id": "v2_1_8",
+              "name": "Планка",
+              "setsTarget": 3,
+              "repsTarget": "45–60 сек",
+              "group": "ПРЕСС"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "emoji": "🏋️",
+          "name": "ОБЪЁМ",
+          "subtitle": "Тяга + грудь + пресс + икры",
+          "duration": "75–80 мин",
+          "dayOfWeek": "Четверг",
+          "exercises": [
+            {
+              "id": "v2_2_1",
+              "name": "Румынская тяга",
+              "setsTarget": 4,
+              "repsTarget": "8–10",
+              "warmupSets": 2,
+              "group": "ЗАДНЯЯ ПОВЕРХНОСТЬ"
+            },
+            {
+              "id": "v2_2_3",
+              "name": "Жим штанги под углом",
+              "setsTarget": 4,
+              "repsTarget": "8–10",
+              "warmupSets": 1,
+              "group": "ГРУДЬ"
+            },
+            {
+              "id": "v2_2_4",
+              "name": "Подтягивания",
+              "setsTarget": 4,
+              "repsTarget": "6–10",
+              "group": "СПИНА"
+            },
+            {
+              "id": "v2_2_5",
+              "name": "Брусья",
+              "setsTarget": 3,
+              "repsTarget": "10–15",
+              "group": "ГРУДЬ / ТРИЦЕПС"
+            },
+            {
+              "id": "v2_2_2",
+              "name": "Разгибание ног на тренажере",
+              "setsTarget": 3,
+              "repsTarget": "10–12",
+              "group": "СУПЕРСЕТ А"
+            },
+            {
+              "id": "v2_2_2b",
+              "name": "Гиперэкстензия",
+              "setsTarget": 3,
+              "repsTarget": "12–15",
+              "group": "СУПЕРСЕТ А"
+            },
+            {
+              "id": "v2_2_6",
+              "name": "Face pull на канате",
+              "setsTarget": 3,
+              "repsTarget": "15",
+              "group": "СУПЕРСЕТ В"
+            },
+            {
+              "id": "v2_2_6b",
+              "name": "Отведение руки в сторону на блоке",
+              "setsTarget": 3,
+              "repsTarget": "12–15",
+              "group": "СУПЕРСЕТ В"
+            },
+            {
+              "id": "v2_2_7",
+              "name": "Подъёмы на носки стоя",
+              "setsTarget": 4,
+              "repsTarget": "15–20",
+              "group": "СУПЕРСЕТ Б"
+            },
+            {
+              "id": "v2_2_8",
+              "name": "Подъём ног в висе",
+              "setsTarget": 4,
+              "repsTarget": "12–15",
+              "group": "СУПЕРСЕТ Б"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "emoji": "🔥",
+          "name": "ГИПЕРТРОФИЯ",
+          "subtitle": "Ноги + плечи + руки + пресс",
+          "duration": "70–75 мин",
+          "dayOfWeek": "Суббота",
+          "exercises": [
+            {
+              "id": "v2_3_1",
+              "name": "Гакк-машина",
+              "setsTarget": 4,
+              "repsTarget": "10–12",
+              "warmupSets": 1,
+              "group": "КВАДРИЦЕПС"
+            },
+            {
+              "id": "v2_3_4b",
+              "name": "Кроссовер на блоке",
+              "setsTarget": 3,
+              "repsTarget": "12–15",
+              "group": "ГРУДЬ"
+            },
+            {
+              "id": "v2_3_5",
+              "name": "Бабочка (pec deck)",
+              "setsTarget": 3,
+              "repsTarget": "12–15",
+              "group": "ГРУДЬ"
+            },
+            {
+              "id": "v2_3_4",
+              "name": "Тяга к подбородку",
+              "setsTarget": 3,
+              "repsTarget": "10–12",
+              "group": "ПЛЕЧИ"
+            },
+            {
+              "id": "v2_3_2",
+              "name": "Сгибания ног лёжа",
+              "setsTarget": 3,
+              "repsTarget": "12–15",
+              "group": "СУПЕРСЕТ А"
+            },
+            {
+              "id": "v2_3_3",
+              "name": "Подъёмы на носки сидя",
+              "setsTarget": 3,
+              "repsTarget": "15–20",
+              "group": "СУПЕРСЕТ А"
+            },
+            {
+              "id": "v2_3_6",
+              "name": "Скамья Скотта",
+              "setsTarget": 3,
+              "repsTarget": "10–12",
+              "group": "СУПЕРСЕТ Б"
+            },
+            {
+              "id": "v2_3_7",
+              "name": "Французский жим гантелей",
+              "setsTarget": 3,
+              "repsTarget": "10–12",
+              "group": "СУПЕРСЕТ Б"
+            },
+            {
+              "id": "v2_3_9",
+              "name": "Обратный подъём штанги",
+              "setsTarget": 3,
+              "repsTarget": "12–15",
+              "group": "СУПЕРСЕТ В"
+            },
+            {
+              "id": "v2_3_8",
+              "name": "Скручивания",
+              "setsTarget": 3,
+              "repsTarget": "15–20",
+              "group": "СУПЕРСЕТ В"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "activeProgramId": "prog_fullbody_v2",
+  "history": [
+    {
+      "id": 1774348068720,
+      "date": "24.03.2026",
+      "dateISO": "2026-03-24",
+      "dayId": 1,
+      "dayName": "СИЛОВОЙ",
+      "duration": "84 мин",
+      "durationMin": 84,
+      "calories": 916,
+      "exercises": [
+        {
+          "exId": "e1_1",
+          "name": "Приседания со штангой",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 70,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 70,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 75,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 80,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 5,
+              "weight": 75,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 6,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        },
+        {
+          "exId": "e1_2",
+          "name": "Жим штанги лёжа",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 60,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 60,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "60",
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 60,
+              "reps": 4,
+              "done": true
+            },
+            {
+              "set": 5,
+              "weight": 60,
+              "reps": 4,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_3",
+          "name": "Тяга штанги в наклоне",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 70,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 80,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 80,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": "80",
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_4",
+          "name": "Шраги со штангой",
+          "group": "ТРАПЕЦИЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 2,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        },
+        {
+          "exId": "e1_5",
+          "name": "Армейский жим (стоя)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 35,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 35,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 32.5,
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_6",
+          "name": "Подъём штанги на бицепс",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 30,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 30,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "30",
+              "reps": 6,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_7",
+          "name": "Разгибания на блоке",
+          "group": "ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 21.5,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 21.5,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 21.5,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_8",
+          "name": "Подъём ног",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 2,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1774515445746,
+      "date": "26.03.2026",
+      "dateISO": "2026-03-26",
+      "dayId": 2,
+      "dayName": "ОБЪЁМ",
+      "duration": "106 мин",
+      "durationMin": 106,
+      "calories": null,
+      "exercises": [
+        {
+          "exId": "e2_1",
+          "name": "Румынская тяга",
+          "group": "ЗАДНЯЯ ПОВЕРХНОСТЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 80,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 90,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 100,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 100,
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_2",
+          "name": "Гиперэкстензия",
+          "group": "ПОЯСНИЦА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 15,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 15,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 15,
+              "reps": 9,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_3",
+          "name": "Сгибания ног лёжа",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 45,
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 35,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 25,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_4",
+          "name": "Подъёмы на носки стоя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 70,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 70,
+              "reps": 14,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 60,
+              "reps": 18,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 60,
+              "reps": 15,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_5",
+          "name": "Жим штанги под углом",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 50,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 50,
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 50,
+              "reps": 6,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_6",
+          "name": "Подтягивания",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 30,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 30,
+              "reps": 6,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_7",
+          "name": "Брусья",
+          "group": "ГРУДЬ / ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 35,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 30,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": 3,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_8",
+          "name": "Разведения в стороны",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 30,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 28,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 28,
+              "reps": 6,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_9",
+          "name": "Молотки (бицепс)",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 14,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 14,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 14,
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_10",
+          "name": "Скручивания",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 2,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1774791923232,
+      "date": "29.03.2026",
+      "dateISO": "2026-03-29",
+      "dayId": 3,
+      "dayName": "ДОБИВКА",
+      "duration": "87 мин",
+      "durationMin": 87,
+      "calories": null,
+      "exercises": [
+        {
+          "exId": "e3_1",
+          "name": "Гакк-машина",
+          "group": "КВАДРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 10,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 10,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 10,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 10,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_2",
+          "name": "Сгибания ног лёжа",
+          "group": "БИЦЕПС БЕДРА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 2,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        },
+        {
+          "exId": "e3_3",
+          "name": "Подъёмы на носки сидя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 2,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        },
+        {
+          "exId": "e3_4",
+          "name": "Жим гантелей лёжа (грудь)",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 20,
+              "reps": 9,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 18,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 18,
+              "reps": 9,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_5",
+          "name": "Бабочка (pec deck)",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 40,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 35,
+              "reps": 11,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 35,
+              "reps": 9,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_6",
+          "name": "Жим гантелей сидя (плечи)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 16,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 16,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 16,
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_7",
+          "name": "Face pull на канате",
+          "group": "ЗАДНИЙ ПУЧОК",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 55,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 55,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 55,
+              "reps": 15,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_8a",
+          "name": "Бицепс",
+          "group": "СУПЕРСЕТ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 30,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 40,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 40,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_8b",
+          "name": "Трицепс",
+          "group": "СУПЕРСЕТ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 40,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 40,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 40,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_9",
+          "name": "Предплечья (reverse curl)",
+          "group": "ПРЕДПЛЕЧЬЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 10,
+              "reps": 30,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 20,
+              "reps": 20,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 20,
+              "reps": 15,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_10",
+          "name": "Подъём ног",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 2,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        },
+        {
+          "exId": "e3_11",
+          "name": "Скручивания",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 2,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1774952327325,
+      "date": "31.03.2026",
+      "dateISO": "2026-03-31",
+      "dayId": 1,
+      "dayName": "СИЛОВОЙ",
+      "duration": "93 мин",
+      "durationMin": 93,
+      "calories": 792,
+      "exercises": [
+        {
+          "exId": "e1_1",
+          "name": "Приседания со штангой",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 5,
+              "weight": 80,
+              "reps": 2,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_2",
+          "name": "Жим штанги лёжа",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "60",
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 5,
+              "weight": 50,
+              "reps": 6,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_3",
+          "name": "Тяга штанги в наклоне",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 85,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 85,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 85,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 85,
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_4",
+          "name": "Шраги со штангой",
+          "group": "ТРАПЕЦИЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 85,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 85,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 85,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_5",
+          "name": "Армейский жим (стоя)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "35",
+              "reps": "6",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": 4,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "35",
+              "reps": 3,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_6",
+          "name": "Подъём штанги на бицепс",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 35,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 30,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": 9,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_7",
+          "name": "Разгибания на блоке",
+          "group": "ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 23.75,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 23.75,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 23.75,
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_8",
+          "name": "Подъём ног",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 2,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1775148642978,
+      "date": "02.04.2026",
+      "dateISO": "2026-04-02",
+      "dayId": 2,
+      "dayName": "ОБЪЁМ",
+      "duration": "85 мин",
+      "durationMin": 85,
+      "calories": 780,
+      "exercises": [
+        {
+          "exId": "e2_1",
+          "name": "Румынская тяга",
+          "group": "ЗАДНЯЯ ПОВЕРХНОСТЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 100,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 100,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 100,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 100,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_2",
+          "name": "Гиперэкстензия",
+          "group": "ПОЯСНИЦА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 15,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 15,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 15,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_3",
+          "name": "Сгибания ног лёжа",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 55,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 60,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_4",
+          "name": "Подъёмы на носки стоя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "70",
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "70",
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "70",
+              "reps": "16",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 0,
+              "reps": 0,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_5",
+          "name": "Жим штанги под углом",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "50",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "50",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "50",
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": "50",
+              "reps": 6,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_6",
+          "name": "Подтягивания",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 30,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 30,
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_7",
+          "name": "Брусья",
+          "group": "ГРУДЬ / ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 30,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 30,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_8",
+          "name": "Разведения в стороны",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "30",
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 35,
+              "reps": "8",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 35,
+              "reps": "8",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_9",
+          "name": "Молотки (бицепс)",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 16,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 16,
+              "reps": 9,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 16,
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_10",
+          "name": "Скручивания",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 2,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1775387018544,
+      "date": "05.04.2026",
+      "dateISO": "2026-04-05",
+      "dayId": 3,
+      "dayName": "ДОБИВКА",
+      "duration": "86 мин",
+      "durationMin": 86,
+      "calories": 724,
+      "exercises": [
+        {
+          "exId": "e3_1",
+          "name": "Гакк-машина",
+          "group": "КВАДРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 15,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 20,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 20,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 20,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_2",
+          "name": "Сгибания ног лёжа",
+          "group": "БИЦЕПС БЕДРА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 30,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 35,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 35,
+              "reps": 15,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_3",
+          "name": "Подъёмы на носки сидя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 40,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 40,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 40,
+              "reps": 16,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_4",
+          "name": "Жим гантелей лёжа (грудь)",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "20",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "20",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "20",
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_5",
+          "name": "Бабочка (pec deck)",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "40",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "40",
+              "reps": 9,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "40",
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_6",
+          "name": "Жим гантелей сидя (плечи)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 18,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 18,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 18,
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_7",
+          "name": "Face pull на канате",
+          "group": "ЗАДНИЙ ПУЧОК",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 60,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 75,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 75,
+              "reps": "15",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_8a",
+          "name": "Бицепс",
+          "group": "СУПЕРСЕТ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 45,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 40,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 40,
+              "reps": 9,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_8b",
+          "name": "Трицепс",
+          "group": "СУПЕРСЕТ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 45,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 45,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 45,
+              "reps": 15,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_9",
+          "name": "Предплечья (reverse curl)",
+          "group": "ПРЕДПЛЕЧЬЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 20,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 50,
+              "reps": 20,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 50,
+              "reps": 20,
+              "done": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1775579199005,
+      "date": "07.04.2026",
+      "dateISO": "2026-04-07",
+      "dayId": 1,
+      "dayName": "СИЛОВОЙ",
+      "duration": "90 мин",
+      "durationMin": 90,
+      "calories": 788,
+      "exercises": [
+        {
+          "exId": "e1_1",
+          "name": "Приседания со штангой",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 60,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 70,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 70,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 70,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 5,
+              "weight": 70,
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_2",
+          "name": "Жим штанги лёжа",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 60,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 60,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 60,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 60,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 5,
+              "weight": 60,
+              "reps": "5",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_3",
+          "name": "Тяга штанги в наклоне",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 90,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 90,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 90,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 90,
+              "reps": 7,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_4",
+          "name": "Шраги со штангой",
+          "group": "ТРАПЕЦИЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 90,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 90,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 60,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_5",
+          "name": "Армейский жим (стоя)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 30,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 30,
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": "5",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_6",
+          "name": "Подъём штанги на бицепс",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 30,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 30,
+              "reps": "8",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_7",
+          "name": "Разгибания на блоке",
+          "group": "ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "23.75",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "23.75",
+              "reps": "9",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "23.75",
+              "reps": 7,
+              "done": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1775753695426,
+      "date": "09.04.2026",
+      "dateISO": "2026-04-09",
+      "dayId": 2,
+      "dayName": "ОБЪЁМ",
+      "duration": "100 мин",
+      "durationMin": 100,
+      "calories": 1008,
+      "exercises": [
+        {
+          "exId": "e2_1",
+          "name": "Румынская тяга",
+          "group": "ЗАДНЯЯ ПОВЕРХНОСТЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 110,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 110,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 110,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 100,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_3",
+          "name": "Разгибание ног на тренажере",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 70,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 75,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 80,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_5",
+          "name": "Жим штанги под углом",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 60,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 55,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 55,
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": "50",
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_6",
+          "name": "Подтягивания",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 30,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 30,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_7",
+          "name": "Брусья",
+          "group": "ГРУДЬ / ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 9,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 15,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 25,
+              "reps": 9,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_8",
+          "name": "Разведения в стороны",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "35",
+              "reps": 11,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": "9",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_9",
+          "name": "Молотки (бицепс)",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "16",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "16",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "16",
+              "reps": 7,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_4",
+          "name": "Подъёмы на носки стоя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_2",
+          "name": "Гиперэкстензия",
+          "group": "ПОЯСНИЦА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 15,
+              "reps": "12",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 15,
+              "reps": "12",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 15,
+              "reps": "12",
+              "done": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1775916212089,
+      "date": "11.04.2026",
+      "dateISO": "2026-04-11",
+      "dayId": 3,
+      "dayName": "ДОБИВКА",
+      "duration": "105 мин",
+      "durationMin": 105,
+      "calories": 941,
+      "exercises": [
+        {
+          "exId": "e3_1",
+          "name": "Гакк-машина",
+          "group": "КВАДРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 30,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 30,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 30,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_2",
+          "name": "Сгибания ног лёжа",
+          "group": "БИЦЕПС БЕДРА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 40,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 40,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 40,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_3",
+          "name": "Подъёмы на носки сидя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 40,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 40,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 40,
+              "reps": "15",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_4",
+          "name": "Жим гантелей лёжа (грудь)",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 22,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 22,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 22,
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_5",
+          "name": "Бабочка (pec deck)",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "40",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "40",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "40",
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_6",
+          "name": "Жим гантелей сидя (плечи)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "18",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "18",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "18",
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_7",
+          "name": "Face pull на канате",
+          "group": "ЗАДНИЙ ПУЧОК",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 21.15,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 23.75,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 23.75,
+              "reps": "15",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_8a",
+          "name": "Бицепс",
+          "group": "СУПЕРСЕТ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 43,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 43,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 43,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_8b",
+          "name": "Трицепс",
+          "group": "СУПЕРСЕТ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 50,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 50,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_9",
+          "name": "Предплечья (reverse curl)",
+          "group": "ПРЕДПЛЕЧЬЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 20,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 17.5,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 20,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e_1775851104411",
+          "name": "Планка",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 60,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 60,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 0,
+              "reps": 60,
+              "done": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1776162709865,
+      "date": "14.04.2026",
+      "dateISO": "2026-04-14",
+      "dayId": 1,
+      "dayName": "СИЛОВОЙ",
+      "duration": "94 мин",
+      "durationMin": 94,
+      "calories": 786,
+      "exercises": [
+        {
+          "exId": "e1_1",
+          "name": "Приседания со штангой",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 60,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 70,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 75,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 75,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 5,
+              "weight": 75,
+              "reps": "5",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_2",
+          "name": "Жим штанги лёжа",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 62.5,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 62.5,
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 62.5,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 62.5,
+              "reps": "5",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e_1775849717064",
+          "name": "Подтягивания",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 0,
+              "reps": 1,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_3",
+          "name": "Тяга штанги в наклоне",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 95,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 95,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 95,
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_4",
+          "name": "Шраги со штангой",
+          "group": "ТРАПЕЦИЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 95,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 95,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 95,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_5",
+          "name": "Армейский жим (стоя)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "30",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 35,
+              "reps": "7",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 35,
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_6",
+          "name": "Подъём штанги на бицепс",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 35,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 35,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "30",
+              "reps": "9",
+              "done": false
+            }
+          ]
+        },
+        {
+          "exId": "e1_7",
+          "name": "Разгибания на блоке",
+          "group": "ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "23.75",
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "23.75",
+              "reps": 9,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "23.75",
+              "reps": 4,
+              "done": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1776357688325,
+      "date": "16.04.2026",
+      "dateISO": "2026-04-16",
+      "dayId": 2,
+      "dayName": "ОБЪЁМ",
+      "duration": "90 мин",
+      "durationMin": 90,
+      "calories": 910,
+      "exercises": [
+        {
+          "exId": "e2_1",
+          "name": "Румынская тяга",
+          "group": "ЗАДНЯЯ ПОВЕРХНОСТЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 90,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 100,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 100,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 100,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_3",
+          "name": "Разгибание ног на тренажере",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 75,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 80,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 85,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_5",
+          "name": "Жим штанги под углом",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "60",
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "60",
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "60",
+              "reps": 4,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 50,
+              "reps": 9,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_6",
+          "name": "Подтягивания",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": "6",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 3,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 15,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 0,
+              "reps": 3,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_7",
+          "name": "Брусья",
+          "group": "ГРУДЬ / ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 20,
+              "reps": 6,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_8",
+          "name": "Разведения в стороны",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "35",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_9",
+          "name": "Молотки (бицепс)",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "16",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "16",
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "16",
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_4",
+          "name": "Подъёмы на носки стоя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "72.5",
+              "reps": "15",
+              "done": false
+            },
+            {
+              "set": 2,
+              "weight": "72.5",
+              "reps": "15",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "72.5",
+              "reps": "15",
+              "done": false
+            },
+            {
+              "set": 4,
+              "weight": "72.5",
+              "reps": "15",
+              "done": false
+            }
+          ]
+        },
+        {
+          "exId": "e2_2",
+          "name": "Гиперэкстензия",
+          "group": "ПОЯСНИЦА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 15,
+              "reps": "12",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 15,
+              "reps": "12",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 15,
+              "reps": "12",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e_1775851254831",
+          "name": "Подъем ног в висе",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 2,
+              "weight": "",
+              "reps": "",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1776789994866,
+      "date": "21.04.2026",
+      "dateISO": "2026-04-21",
+      "dayId": 1,
+      "dayName": "СИЛОВОЙ",
+      "duration": "85 мин",
+      "durationMin": 85,
+      "calories": 842,
+      "exercises": [
+        {
+          "exId": "e1_1",
+          "name": "Приседания со штангой",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 70,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 5,
+              "weight": 70,
+              "reps": "5",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_2",
+          "name": "Жим штанги лёжа",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 60,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 60,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 60,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 60,
+              "reps": 6,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e_1775849717064",
+          "name": "Подтягивания",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 20,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 20,
+              "reps": 6,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_3",
+          "name": "Тяга штанги в наклоне",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 90,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 90,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 90,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_4",
+          "name": "Шраги со штангой",
+          "group": "ТРАПЕЦИЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 90,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 90,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 90,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_5",
+          "name": "Армейский жим (стоя)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "35",
+              "reps": 9,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 35,
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_6",
+          "name": "Подъём штанги на бицепс",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "35",
+              "reps": 9,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": 9,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_7",
+          "name": "Разгибания на блоке",
+          "group": "ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "23.75",
+              "reps": 11,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "23.75",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "23.75",
+              "reps": 6,
+              "done": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1777051715132,
+      "date": "24.04.2026",
+      "dateISO": "2026-04-24",
+      "dayId": 2,
+      "dayName": "ОБЪЁМ",
+      "duration": "90 мин",
+      "durationMin": 90,
+      "calories": 919,
+      "exercises": [
+        {
+          "exId": "e2_1",
+          "name": "Румынская тяга",
+          "group": "ЗАДНЯЯ ПОВЕРХНОСТЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 90,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 90,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 100,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 100,
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_3",
+          "name": "Разгибание ног на тренажере",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 80,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 90,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 85,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_5",
+          "name": "Жим штанги под углом",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 55,
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 55,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 50,
+              "reps": 9,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_6",
+          "name": "Подтягивания",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 4,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 20,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 20,
+              "reps": "6",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_7",
+          "name": "Брусья",
+          "group": "ГРУДЬ / ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": "7",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "20",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "20",
+              "reps": 6,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_8",
+          "name": "Разведения в стороны",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "35",
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "35",
+              "reps": 9,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_9",
+          "name": "Молотки (бицепс)",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 14,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 14,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 14,
+              "reps": 7,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_4",
+          "name": "Подъёмы на носки стоя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_2",
+          "name": "Гиперэкстензия",
+          "group": "ПОЯСНИЦА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 15,
+              "reps": "12",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 20,
+              "reps": "12",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 10,
+              "reps": "12",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e_1775851254831",
+          "name": "Подъем ног в висе",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "",
+              "reps": "",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1777221660394,
+      "date": "26.04.2026",
+      "dateISO": "2026-04-26",
+      "dayId": 3,
+      "dayName": "ДОБИВКА",
+      "duration": "94 мин",
+      "durationMin": 94,
+      "calories": 746,
+      "exercises": [
+        {
+          "exId": "e3_1",
+          "name": "Гакк-машина",
+          "group": "КВАДРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 20,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 40,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 40,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 40,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_2",
+          "name": "Сгибания ног лёжа",
+          "group": "БИЦЕПС БЕДРА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 45,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 50,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 45,
+              "reps": "12",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_3",
+          "name": "Подъёмы на носки сидя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 40,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 40,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 40,
+              "reps": "15",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_4",
+          "name": "Жим гантелей лёжа (грудь)",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 20,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 20,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 20,
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_5",
+          "name": "Бабочка (pec deck)",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "40",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 43,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 41.5,
+              "reps": 7,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_6",
+          "name": "Жим гантелей сидя (плечи)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "18",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "18",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "18",
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_7",
+          "name": "Face pull на канате",
+          "group": "ЗАДНИЙ ПУЧОК",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 23.75,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 26.25,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 26.25,
+              "reps": "15",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_8a",
+          "name": "Бицепс",
+          "group": "СУПЕРСЕТ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 45,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 45,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 43,
+              "reps": 9,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_8b",
+          "name": "Трицепс",
+          "group": "СУПЕРСЕТ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 55,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 55,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 53,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_9",
+          "name": "Предплечья (reverse curl)",
+          "group": "ПРЕДПЛЕЧЬЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "20",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "20",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "20",
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e_1775851104411",
+          "name": "Планка",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 60,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 60,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 0,
+              "reps": 60,
+              "done": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1777465420787,
+      "date": "29.04.2026",
+      "dateISO": "2026-04-29",
+      "dayId": 1,
+      "dayName": "СИЛОВОЙ",
+      "duration": "90 мин",
+      "durationMin": 90,
+      "calories": 942,
+      "exercises": [
+        {
+          "exId": "e1_1",
+          "name": "Приседания со штангой",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 70,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 5,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_2",
+          "name": "Жим штанги лёжа",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 70,
+              "reps": 4,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 60,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 60,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 60,
+              "reps": 7,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e_1775849717064",
+          "name": "Подтягивания",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": "6",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 0,
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_3",
+          "name": "Тяга штанги в наклоне",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_4",
+          "name": "Шраги со штангой",
+          "group": "ТРАПЕЦИЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 80,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 80,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 80,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_5",
+          "name": "Армейский жим (стоя)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "35",
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "35",
+              "reps": 4,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_6",
+          "name": "Подъём штанги на бицепс",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 20,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "35",
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_7",
+          "name": "Разгибания на блоке",
+          "group": "ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "23.75",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "23.75",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "23.75",
+              "reps": 8,
+              "done": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1777712477351,
+      "date": "02.05.2026",
+      "dateISO": "2026-05-02",
+      "dayId": 2,
+      "dayName": "ОБЪЁМ",
+      "duration": "97 мин",
+      "durationMin": 97,
+      "calories": 1251,
+      "exercises": [
+        {
+          "exId": "e2_1",
+          "name": "Румынская тяга",
+          "group": "ЗАДНЯЯ ПОВЕРХНОСТЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 80,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 80,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 80,
+              "reps": 1,
+              "done": false
+            }
+          ]
+        },
+        {
+          "exId": "e2_3",
+          "name": "Разгибание ног на тренажере",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 85,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 90,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 90,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_5",
+          "name": "Жим штанги под углом",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 60,
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "55",
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": "55",
+              "reps": 3,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_6",
+          "name": "Подтягивания",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 20,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 20,
+              "reps": "6",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 20,
+              "reps": "6",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_7",
+          "name": "Брусья",
+          "group": "ГРУДЬ / ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": "9",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "20",
+              "reps": 7,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_8",
+          "name": "Разведения в стороны",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "35",
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 30,
+              "reps": "11",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_9",
+          "name": "Молотки (бицепс)",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 16,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 16,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 16,
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_4",
+          "name": "Подъёмы на носки стоя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 70,
+              "reps": 20,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 70,
+              "reps": 20,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 70,
+              "reps": 17,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_2",
+          "name": "Гиперэкстензия",
+          "group": "ПОЯСНИЦА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 20,
+              "reps": "12",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 20,
+              "reps": "12",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "22.5",
+              "reps": "12",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e_1775851254831",
+          "name": "Подъем ног в висе",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "0",
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "0",
+              "reps": "11",
+              "done": false
+            },
+            {
+              "set": 3,
+              "weight": "0",
+              "reps": "11",
+              "done": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1777910314927,
+      "date": "04.05.2026",
+      "dateISO": "2026-05-04",
+      "dayId": 3,
+      "dayName": "ДОБИВКА",
+      "duration": "86 мин",
+      "durationMin": 86,
+      "calories": 1165,
+      "exercises": [
+        {
+          "exId": "e3_1",
+          "name": "Гакк-машина",
+          "group": "КВАДРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 30,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 50,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 50,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 50,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_2",
+          "name": "Сгибания ног лёжа",
+          "group": "БИЦЕПС БЕДРА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 45,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 50,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 50,
+              "reps": "12",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_3",
+          "name": "Подъёмы на носки сидя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 40,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 40,
+              "reps": 20,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 40,
+              "reps": "15",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_4",
+          "name": "Жим гантелей лёжа (грудь)",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "20",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "20",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "20",
+              "reps": 7,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_5",
+          "name": "Бабочка (pec deck)",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "43",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "43",
+              "reps": "9",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "43",
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_6",
+          "name": "Жим гантелей сидя (плечи)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 18,
+              "reps": 11,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 18,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 18,
+              "reps": 7,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_7",
+          "name": "Face pull на канате",
+          "group": "ЗАДНИЙ ПУЧОК",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 26.25,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 26.25,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 26.25,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_8a",
+          "name": "Бицепс",
+          "group": "СУПЕРСЕТ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 45,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 45,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 45,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_8b",
+          "name": "Трицепс",
+          "group": "СУПЕРСЕТ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 55,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 55,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 55,
+              "reps": "10",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e3_9",
+          "name": "Предплечья (reverse curl)",
+          "group": "ПРЕДПЛЕЧЬЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "20",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 25,
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "20",
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e_1775851104411",
+          "name": "Планка",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 60,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 60,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 0,
+              "reps": 60,
+              "done": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1778173588113,
+      "date": "07.05.2026",
+      "dateISO": "2026-05-07",
+      "dayId": 1,
+      "dayName": "СИЛОВОЙ",
+      "duration": "73 мин",
+      "durationMin": 73,
+      "calories": 713,
+      "exercises": [
+        {
+          "exId": "e1_1",
+          "name": "Приседания со штангой",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 80,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            },
+            {
+              "set": 5,
+              "weight": 80,
+              "reps": "5",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_2",
+          "name": "Жим штанги лёжа",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 60,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 65,
+              "reps": 4,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 65,
+              "reps": 4,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 65,
+              "reps": 4,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e_1775849717064",
+          "name": "Подтягивания",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "0",
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "0",
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "0",
+              "reps": 4,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_3",
+          "name": "Тяга штанги в наклоне",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_4",
+          "name": "Шраги со штангой",
+          "group": "ТРАПЕЦИЯ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 80,
+              "reps": 15,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 80,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 80,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_5",
+          "name": "Армейский жим (стоя)",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "35",
+              "reps": 8,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "35",
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_6",
+          "name": "Подъём штанги на бицепс",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "35",
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "35",
+              "reps": 5,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e1_7",
+          "name": "Разгибания на блоке",
+          "group": "ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "23.75",
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "23.75",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "23.75",
+              "reps": 8,
+              "done": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 1778404851058,
+      "date": "10.05.2026",
+      "dateISO": "2026-05-10",
+      "dayId": 2,
+      "dayName": "ОБЪЁМ",
+      "duration": "84 мин",
+      "durationMin": 84,
+      "calories": 900,
+      "exercises": [
+        {
+          "exId": "e2_1",
+          "name": "Румынская тяга",
+          "group": "ЗАДНЯЯ ПОВЕРХНОСТЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 60,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 90,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 90,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 90,
+              "reps": 12,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_3",
+          "name": "Разгибание ног на тренажере",
+          "group": "НОГИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 90,
+              "reps": 12,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 95,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 95,
+              "reps": 8,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_5",
+          "name": "Жим штанги под углом",
+          "group": "ГРУДЬ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 50,
+              "reps": 10,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "60",
+              "reps": 6,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "60",
+              "reps": 4,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 55,
+              "reps": "7",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_6",
+          "name": "Подтягивания",
+          "group": "СПИНА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": "6",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 3,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 20,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 20,
+              "reps": "6",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_7",
+          "name": "Брусья",
+          "group": "ГРУДЬ / ТРИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 0,
+              "reps": 9,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 0,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "20",
+              "reps": 6,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_8",
+          "name": "Разведения в стороны",
+          "group": "ПЛЕЧИ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 39.5,
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "35",
+              "reps": "10",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "35",
+              "reps": 7,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_9",
+          "name": "Молотки (бицепс)",
+          "group": "БИЦЕПС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 18,
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 18,
+              "reps": 5,
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "16",
+              "reps": 7,
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e2_4",
+          "name": "Подъёмы на носки стоя",
+          "group": "ИКРЫ",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 70,
+              "reps": "15",
+              "done": true
+            },
+            {
+              "set": 4,
+              "weight": 70,
+              "reps": "15",
+              "done": false
+            }
+          ]
+        },
+        {
+          "exId": "e2_2",
+          "name": "Гиперэкстензия",
+          "group": "ПОЯСНИЦА",
+          "sets": [
+            {
+              "set": 1,
+              "weight": 20,
+              "reps": "12",
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": 20,
+              "reps": "12",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": 20,
+              "reps": "12",
+              "done": true
+            }
+          ]
+        },
+        {
+          "exId": "e_1775851254831",
+          "name": "Подъем ног в висе",
+          "group": "ПРЕСС",
+          "sets": [
+            {
+              "set": 1,
+              "weight": "0",
+              "reps": 7,
+              "done": true
+            },
+            {
+              "set": 2,
+              "weight": "0",
+              "reps": "11",
+              "done": true
+            },
+            {
+              "set": 3,
+              "weight": "0",
+              "reps": "11",
+              "done": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

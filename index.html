@@ -532,6 +532,52 @@
         opacity: 0.5;
       }
 
+      /* WARMUP ROWS */
+      .set-row.warmup td {
+        padding-top: 3px;
+        padding-bottom: 3px;
+      }
+      .set-row.warmup .set-num {
+        font-size: 9px;
+        font-weight: 700;
+        color: #64d2ff;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        width: 28px;
+      }
+      .set-row.warmup .set-input {
+        background: var(--bg);
+        border-color: #2a3a42;
+        color: #64d2ff;
+        font-size: 13px;
+        opacity: 0.85;
+      }
+      .set-row.warmup .set-input.filled {
+        border-color: #3a5a6a;
+      }
+      .set-row.warmup .stepper-btn {
+        background: var(--bg);
+        border-color: #2a3a42;
+        color: #64d2ff;
+        opacity: 0.75;
+      }
+      .set-row.warmup .set-check {
+        border-color: #2a3a42;
+        opacity: 0.6;
+      }
+      .set-row.warmup .set-check.done {
+        background: #1a4a5a;
+        border-color: #64d2ff;
+      }
+      .warmup-divider td {
+        padding: 4px 0 2px;
+      }
+      .warmup-divider-line {
+        height: 1px;
+        background: var(--border);
+        width: 100%;
+      }
+
       /* WORKOUT NAV */
       #workout-nav {
         position: fixed;
@@ -2482,17 +2528,21 @@
           );
           const fillWeight = prog ? String(prog.weight) : "";
           const fillReps = prog ? String(prog.reps) : "";
+          const warmupCount = ex.warmupSets || 0;
+          const warmupSets = Array.from({ length: warmupCount }, () => ({
+            weight: "", reps: "", done: false, isWarmup: true,
+          }));
+          const workingSets = Array.from({ length: ex.setsTarget }, () => ({
+            weight: fillWeight, reps: fillReps, done: false,
+          }));
           return {
             exId: ex.id,
             name: ex.name,
             setsTarget: ex.setsTarget,
+            warmupSets: warmupCount,
             repsTarget: ex.repsTarget,
             group: ex.group,
-            sets: Array.from({ length: ex.setsTarget }, () => ({
-              weight: fillWeight,
-              reps: fillReps,
-              done: false,
-            })),
+            sets: [...warmupSets, ...workingSets],
           };
         });
 
@@ -2527,9 +2577,10 @@
         dotsEl.innerHTML = "";
         session.exercises.forEach((e, i) => {
           const dot = document.createElement("div");
+          const workingSets = e.sets.filter((s) => !s.isWarmup);
           const filled =
-            e.sets.length > 0 &&
-            e.sets.every((s) => s.done);
+            workingSets.length > 0 &&
+            workingSets.every((s) => s.done);
           let cls = "progress-dot";
           if (i === idx) cls += " current";
           else if (filled) cls += " done";
@@ -2547,11 +2598,19 @@
         );
 
         // Build sets rows
+        const warmupCount = ex.warmupSets || 0;
+        let workingNum = 0;
         const setsHTML = ex.sets
-          .map(
-            (set, si) => `
-    <tr class="set-row" data-set="${si}">
-      <td class="set-num">${si + 1}</td>
+          .map((set, si) => {
+            const isWarmup = !!set.isWarmup;
+            const label = isWarmup ? "Разм." : ++workingNum;
+            const rowClass = isWarmup ? "set-row warmup" : "set-row";
+            const divider = !isWarmup && workingNum === 1 && warmupCount > 0
+              ? `<tr class="warmup-divider"><td colspan="4"><div class="warmup-divider-line"></div></td></tr>`
+              : "";
+            return `${divider}
+    <tr class="${rowClass}" data-set="${si}">
+      <td class="set-num">${label}</td>
       <td class="col-weight">
         <div class="stepper">
           <button class="stepper-btn" onclick="stepField(${si}, 'weight', -2.5)">−</button>
@@ -2583,15 +2642,14 @@
           ${set.done ? `<svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>` : ""}
         </button>
       </td>
-    </tr>
-  `,
-          )
+    </tr>`;
+          })
           .join("");
 
         const cardHTML = `
     ${ex.group ? `<div class="exercise-group-label">${ex.group}</div>` : ""}
     <div class="exercise-name">${ex.name}</div>
-    <div class="exercise-target">${ex.setsTarget} × ${ex.repsTarget} повт.</div>
+    <div class="exercise-target">${warmupCount > 0 ? `${warmupCount} разм. + ` : ""}${ex.setsTarget} × ${ex.repsTarget} повт.</div>
     <div class="exercise-hint">${hint}</div>
     <table class="sets-table">
       <thead>
@@ -2638,8 +2696,9 @@
 
         const filledSets = exData.sets.filter(
           (s) =>
-            (s.weight !== "" && s.weight !== null) ||
-            (s.reps !== "" && s.reps !== null),
+            !s.isWarmup &&
+            ((s.weight !== "" && s.weight !== null) ||
+            (s.reps !== "" && s.reps !== null)),
         );
         if (!filledSets.length) return null;
 
@@ -2753,7 +2812,8 @@
         }
         document.querySelectorAll(".progress-dot").forEach((dot, i) => {
           const e = session.exercises[i];
-          const filled = e.sets.length > 0 && e.sets.every((s) => s.done);
+          const ws = e.sets.filter((s) => !s.isWarmup);
+          const filled = ws.length > 0 && ws.every((s) => s.done);
           dot.className =
             "progress-dot" +
             (i === session.currentExIndex ? " current" : filled ? " done" : "");
@@ -2974,6 +3034,7 @@
               weight: s.weight,
               reps: s.reps,
               done: s.done,
+              isWarmup: s.isWarmup || false,
             })),
           })),
         };
