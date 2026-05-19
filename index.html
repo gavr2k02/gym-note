@@ -383,7 +383,30 @@
         background: rgba(255, 107, 53, 0.12);
         padding: 3px 8px;
         border-radius: 6px;
+        margin-bottom: 0;
+      }
+      .exercise-header-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
         margin-bottom: 8px;
+      }
+      .optional-badge {
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--text2);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        background: rgba(142, 142, 147, 0.1);
+        border: 1px dashed rgba(142, 142, 147, 0.35);
+        padding: 2px 7px;
+        border-radius: 6px;
+      }
+      .exercise-name.optional {
+        opacity: 0.65;
+      }
+      .progress-dot.optional-ex {
+        opacity: 0.45;
       }
       .exercise-name {
         font-size: 22px;
@@ -2542,6 +2565,7 @@
             warmupSets: warmupCount,
             repsTarget: ex.repsTarget,
             group: ex.group,
+            optional: ex.optional || false,
             sets: [...warmupSets, ...workingSets],
           };
         });
@@ -2566,6 +2590,12 @@
         const ex = session.exercises[session.currentExIndex];
         const total = session.exercises.length;
         const idx = session.currentExIndex;
+        const progDay = getActiveDays().find((d) => d.id === session.dayId);
+        // resolve optional from program (source of truth), fallback to session field
+        session.exercises.forEach((e) => {
+          const pe = progDay?.exercises.find((p) => p.id === e.exId);
+          if (pe?.optional) e.optional = true;
+        });
 
         document.getElementById("workout-day-name").textContent =
           session.dayName;
@@ -2585,6 +2615,7 @@
           if (i === idx) cls += " current";
           else if (filled) cls += " done";
           dot.className = cls;
+          if (e.optional) dot.classList.add("optional-ex");
           dot.title = session.exercises[i].name;
           dot.onclick = () => goToExercise(i);
           dotsEl.appendChild(dot);
@@ -2646,9 +2677,13 @@
           })
           .join("");
 
+        const headerParts = [
+          ex.group ? `<div class="exercise-group-label">${ex.group}</div>` : "",
+          ex.optional ? `<span class="optional-badge">необязательно</span>` : "",
+        ].filter(Boolean).join("");
         const cardHTML = `
-    ${ex.group ? `<div class="exercise-group-label">${ex.group}</div>` : ""}
-    <div class="exercise-name">${ex.name}</div>
+    ${headerParts ? `<div class="exercise-header-row">${headerParts}</div>` : ""}
+    <div class="exercise-name${ex.optional ? " optional" : ""}">${ex.name}</div>
     <div class="exercise-target">${warmupCount > 0 ? `${warmupCount} разм. + ` : ""}${ex.setsTarget} × ${ex.repsTarget} повт.</div>
     <div class="exercise-hint">${hint}</div>
     <table class="sets-table">
